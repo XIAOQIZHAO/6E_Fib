@@ -30,7 +30,6 @@ public class Fib {
      /* These are class methods because the calculation for the nth fib number is universally true
 	/* These are class methods because the output of the methods will be the same for all instances of Fib. 
     */
-    */
     /* grows exponentially since each call of fib(n) calls fib(n-1) and fib(n-2), which squares the cost
      */
 
