@@ -28,6 +28,8 @@ public class Fib {
 	// no leftover
     }
      /* These are class methods because the calculation for the nth fib number is universally true
+	/* These are class methods because the output of the methods will be the same for all instances of Fib. 
+    */
     */
     /* grows exponentially since each call of fib(n) calls fib(n-1) and fib(n-2), which squares the cost
      */
@@ -41,7 +43,7 @@ public class Fib {
               calculated via the 8th-grade algorithm
      */
     public static long fib_grade8( int n) {
-	int a = 0, b = 1, c;
+	long a = 0, b = 1, c;
 	for (int i = 0; i < n; i++){
 	    c = a + b;
 	    a = b;
@@ -52,12 +54,12 @@ public class Fib {
     /* Time complexity:
        Consider the size of the problem to be n
        
-       As the proxy for the time required, count assignment of values
+       As the proxy for the time required, count number of iterations
        
        Then cost of the the recurrence algorithm
-       grows linearly (3n)
+       grows linearly 
        as the size of the problem increases,
-       because for every increase in n, the number of assignments increase by 3
+       because for every increase in n, the number of number of iterations increase by the same amount
      */
 
 
@@ -75,11 +77,11 @@ public class Fib {
     /* Time complexity:
        Consider the size of the problem to be n
        
-       As the proxy for the time required, count nothing
+       As the proxy for the time required, count number of computations
        
        Then cost of the the recurrence algorithm
        grows constantly
        as the size of the problem increases,
-       because for every increase in n, there is no additional cost
+       because for every increase in n, there is no additional computations
      */
 }
